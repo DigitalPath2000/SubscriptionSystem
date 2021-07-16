@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="js/subscription.js"></script>
+<title>Player Progress Widget</title>
+
+</head>
+
+<body>
+<div id="subscriptions">
+  Subscription Type
+  <br>
+  <button onclick="basic()">
+    Basic
+    <br>$0
+    <br>Click to Buy
+  </button>
+  <button onclick="full()">
+    Full
+    <br>$95
+    <br>1 League/2 Tournament Tokens
+    <br>Click to Buy
+  </button>
+  <button onclick="allAccess()">
+    All Access
+    <br>$195
+    <br>∞ League/∞ Tournament Tokens
+    <br>Click to Buy
+  </button>
+  <button onclick="familyPlan()">
+    Family Plan
+    <br>$295
+    <br>∞ League/∞ Tournament Tokens
+    <br>for Family of Four
+    <br>Click to Buy
+  </button>
+  <br>
+  Full Price <input id="price" placeholder="Regular Price">$
+  <br>
+</div>
+
+<div id="discount-percent-calculation">
+  <br>
+  Household Size
+  <br>
+  <select name="household_size" id="household_size">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  </select>
+  <br>
+  Household Income
+  <br>
+  <select name="household_income" id="household_income">
+  <option value="0">15,000</option>
+  <option value="1">30,000</option>
+  <option value="2">45,000</option>
+  <option value="3">60,000</option>
+  <option value="4">75,000</option>
+  <option value="5">90,000+</option>
+  </select>
+  <br>
+  <button onclick="getPercent()">
+    Get Scholarship Discount
+  </button>
+</div>
+
+<br>
+
+<div id="discount-total-calculation">
+
+    <br>
+    Scholarship Discount <input readonly id="discount" placeholder="Percent">%
+    <br>
+    Scholarship Price <input readonly id="total" placeholder="Price with Scholarship">$
+</div>
+</body>
+
+</html>
