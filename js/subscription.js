@@ -1,5 +1,5 @@
 basic = function() {
-  document.getElementById("price").value = 0;
+  document.getElementById("price").value = 10;
 }
 full = function() {
   document.getElementById("price").value = 95;

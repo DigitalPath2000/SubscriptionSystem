@@ -13,13 +13,14 @@
   <br>
   <button onclick="basic()">
     Basic
-    <br>$0
+    <br>$10
+    <br>1 Tournament Token
     <br>Click to Buy
   </button>
   <button onclick="full()">
     Full
     <br>$95
-    <br>1 League/2 Tournament Tokens
+    <br>1 League/1 Tournament Token
     <br>Click to Buy
   </button>
   <button onclick="allAccess()">
@@ -44,7 +45,7 @@
   <br>
   Household Size
   <br>
-  <select name="household_size" id="household_size">
+  <select name="household_size" id="household_size" onchange="getPercent()">
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
@@ -57,7 +58,7 @@
   <br>
   Household Income
   <br>
-  <select name="household_income" id="household_income">
+  <select name="household_income" id="household_income" onchange="getPercent()">
   <option value="0">15,000</option>
   <option value="1">30,000</option>
   <option value="2">45,000</option>
@@ -66,9 +67,6 @@
   <option value="5">90,000+</option>
   </select>
   <br>
-  <button onclick="getPercent()">
-    Get Scholarship Discount
-  </button>
 </div>
 
 <br>
